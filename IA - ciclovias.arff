@@ -1,4 +1,4 @@
-@relation 'IA - Página1'
+@relation 'IA - PÃ¡gina1'
 
 @attribute ID numeric
 @attribute Longitude numeric
