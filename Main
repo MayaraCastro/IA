@@ -1,14 +1,11 @@
 from scipy.io import arff
 import pandas as pd
 
-data = arff.loadarff('iris.arff')
+data = arff.loadarff('ciclovias.arff')
 df = pd.DataFrame(data[0])
 
-for i in range(df.size):
-    print(df.iloc[0])
-    '''  
-    print('ID: ' + df.at[i,'ID']+' ')
-    print('Longitude: '+ df.at[i,'Longitude']+' ')
-    print('Latitude: ' + df.at[i,'Latitude'])
-    '''
+for i in range(df.icol(0).size):
+    print('ID: ' , df.at[i,'ID'],' ', 'Longitude: ', df.at[i,'Longitude'],' ','Latitude: ' , df.at[i,'Latitude'])
+
+
 df.head()
